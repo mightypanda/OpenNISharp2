@@ -83,7 +83,7 @@ namespace OpenNISharp2.Example
 
                     for (int i = 0; i < 30; i++)
                     {
-                        ReadFreame(stream);
+                        ReadFrame(stream);
                     }
                
 
@@ -93,7 +93,7 @@ namespace OpenNISharp2.Example
             OpenNI.Shutdown();
         }
 
-        private static void ReadFreame(SensorStream stream)
+        private static void ReadFrame(SensorStream stream)
         {
             using (var frame = stream.ReadFrame())
             {

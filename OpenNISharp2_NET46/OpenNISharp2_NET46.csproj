@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F9CA774-7F44-4F9A-B4E8-1ACE99FB09F6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OpenNISharp2_NET45</RootNamespace>
+    <AssemblyName>OpenNISharp2_NET45</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET46</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\OpenNISharp2\ArrayExtensions.cs">
+      <Link>ArrayExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\CoordinateConverter.cs">
+      <Link>CoordinateConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\Cropping.cs">
+      <Link>Cropping.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\Device.cs">
+      <Link>Device.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\Device.properties.cs">
+      <Link>Device.properties.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\DeviceInfo.cs">
+      <Link>DeviceInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\DisposableBase.cs">
+      <Link>DisposableBase.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\ImageRegistrationMode.cs">
+      <Link>ImageRegistrationMode.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\ImageRegistrationModeExtensions.cs">
+      <Link>ImageRegistrationModeExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\Native\ConstCharPtrMarshaler.cs">
+      <Link>Native\ConstCharPtrMarshaler.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\Native\FunctionLoader.cs">
+      <Link>Native\FunctionLoader.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\Native\LibraryLoader.cs">
+      <Link>Native\LibraryLoader.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\Native\LinuxNativeMethods.cs">
+      <Link>Native\LinuxNativeMethods.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\Native\MacNativeMethods.cs">
+      <Link>Native\MacNativeMethods.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\Native\OniCAPI.arrays.g.cs">
+      <Link>Native\OniCAPI.arrays.g.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\Native\OniCAPI.consts.g.cs">
+      <Link>Native\OniCAPI.consts.g.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\Native\OniCAPI.cs">
+      <Link>Native\OniCAPI.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\Native\OniCAPI.delegates.g.cs">
+      <Link>Native\OniCAPI.delegates.g.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\Native\OniCAPI.enums.g.cs">
+      <Link>Native\OniCAPI.enums.g.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\Native\OniCAPI.functions.g.cs">
+      <Link>Native\OniCAPI.functions.g.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\Native\OniCAPI.macros.g.cs">
+      <Link>Native\OniCAPI.macros.g.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\Native\OniCAPI.structs.g.cs">
+      <Link>Native\OniCAPI.structs.g.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\Native\OniCAPI.structs.incomplete.g.cs">
+      <Link>Native\OniCAPI.structs.incomplete.g.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\Native\WindowsNativeMethods.cs">
+      <Link>Native\WindowsNativeMethods.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\OniCAPIExtensions.cs">
+      <Link>OniCAPIExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\OpenNI.cs">
+      <Link>OpenNI.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\OpenNIException.cs">
+      <Link>OpenNIException.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\OpenNIVersion.cs">
+      <Link>OpenNIVersion.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\OpenNIVersionExtensions.cs">
+      <Link>OpenNIVersionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\PixelFormat.cs">
+      <Link>PixelFormat.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\PixelFormatExtensions.cs">
+      <Link>PixelFormatExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\Recorder.cs">
+      <Link>Recorder.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\SensorFrame.cs">
+      <Link>SensorFrame.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\SensorInfo.cs">
+      <Link>SensorInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\SensorStream.cs">
+      <Link>SensorStream.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\SensorStream.properties.cs">
+      <Link>SensorStream.properties.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\SensorType.cs">
+      <Link>SensorType.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\SensorTypeExtensions.cs">
+      <Link>SensorTypeExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\VideoMode.cs">
+      <Link>VideoMode.cs</Link>
+    </Compile>
+    <Compile Include="..\OpenNISharp2\VideoModeExtensions.cs">
+      <Link>VideoModeExtensions.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenNISharp2.Example", "Ope
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenNISharp2.CppSharpUnsafeGenerator", "OpenNISharp2.CppSharpUnsafeGenerator\OpenNISharp2.CppSharpUnsafeGenerator.csproj", "{F61C3338-E6EC-4033-83D4-E3356CA48FA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenNISharp2_NET46", "OpenNISharp2_NET46\OpenNISharp2_NET46.csproj", "{3F9CA774-7F44-4F9A-B4E8-1ACE99FB09F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenNISharp2_NET46.Example", "OpenNISharp2_NET46.Example\OpenNISharp2_NET46.Example.csproj", "{214A4454-E6D4-4AF9-8F2B-F719928E990C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{F61C3338-E6EC-4033-83D4-E3356CA48FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F61C3338-E6EC-4033-83D4-E3356CA48FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F61C3338-E6EC-4033-83D4-E3356CA48FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F9CA774-7F44-4F9A-B4E8-1ACE99FB09F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F9CA774-7F44-4F9A-B4E8-1ACE99FB09F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F9CA774-7F44-4F9A-B4E8-1ACE99FB09F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F9CA774-7F44-4F9A-B4E8-1ACE99FB09F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{214A4454-E6D4-4AF9-8F2B-F719928E990C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{214A4454-E6D4-4AF9-8F2B-F719928E990C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{214A4454-E6D4-4AF9-8F2B-F719928E990C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{214A4454-E6D4-4AF9-8F2B-F719928E990C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
